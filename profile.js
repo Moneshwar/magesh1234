@@ -12,7 +12,7 @@ function submitForm()
   {
     var formData = {name: name, phone: phone, email: email,college:college, course:course, yop:yop, areaOfIntrest:areaOfIntrest};
     $('#message').html('<span style="color: red">Processing form. . . please wait. . .</span>');
-    $.ajax({url: "demo.php", type: 'POST', data: formData, success: function(response)
+    $.ajax({url: "profile.php", type: 'POST', data: formData, success: function(response)
     {
       var res = JSON.parse(response);
       console.log(res);

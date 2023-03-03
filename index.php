@@ -17,7 +17,7 @@ else{
   <body>
     <h1>Welcome <?php echo $user["name"]; ?></h1>
     <a href="profile.html"> Profile Updates</a><br>
-    <a href="profileView.html">Profile View</a><br>
+    <a href="profileView.php">Profile View</a><br>
     <a href="logout.php">Logout</a>
   </body>
 </html>

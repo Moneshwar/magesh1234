@@ -1,7 +1,6 @@
 <?php
 session_start();
 $conn = mysqli_connect("localhost", "root", "", "loginregister");
-
 // IF
 if(isset($_POST["action"])){
   if($_POST["action"] == "register"){
@@ -39,7 +38,6 @@ function register(){
 // LOGIN
 function login(){
   global $conn;
-  global $username;
   $username = $_POST["username"];
   $password = $_POST["password"];
 
